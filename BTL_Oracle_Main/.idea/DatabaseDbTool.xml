@@ -1,0 +1,344 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="DatabaseDbTool">
+    <option name="sources">
+      <map>
+        <entry key="localhost">
+          <value>
+            <DataConfigSourceDto>
+              <option name="comment" value="" />
+              <option name="dataBaseType" value="Oracle" />
+              <option name="database" value="ORACLE_BTL" />
+              <option name="databaseName" value="localhost" />
+              <option name="databaseSslConfig">
+                <DatabaseSslConfig>
+                  <option name="caFile" value="" />
+                  <option name="clientCertificateFile" value="" />
+                  <option name="clientKeyFile" value="" />
+                  <option name="clientKeyPassword" value="" />
+                  <option name="sslMode" value="REQUIRE" />
+                </DatabaseSslConfig>
+              </option>
+              <option name="databaseVersion">
+                <NameVersion>
+                  <option name="majorVersion" value="21" />
+                  <option name="name" value="Oracle" />
+                  <option name="version" value="Oracle Database 21c Express Edition Release 21.0.0.0.0 - Production&#10;Version 21.3.0.0.0" />
+                </NameVersion>
+              </option>
+              <option name="dbFile" value="" />
+              <option name="driverCombos" value="thin" />
+              <option name="driverType" value="Oracle" />
+              <option name="host" value="localhost" />
+              <option name="jarUrl" value="C:\Users\ntkvt\AppData\Roaming\JetBrains\IdeaIC2022.2\jdbc-drivers\Oracle\21.1.0.0\ojdbc8.jar" />
+              <option name="myUniqueId" value="b81a4fa9-dc02-4ab0-95bb-342538adade9" />
+              <option name="port" value="1521" />
+              <option name="properties">
+                <map />
+              </option>
+              <option name="schemaSourceDto">
+                <SchemaSourceDto>
+                  <option name="name" value="ORACLE_BTL" />
+                  <option name="tableSources">
+                    <list>
+                      <TableSourceDto>
+                        <option name="columns">
+                          <list>
+                            <ColumnSourceDto>
+                              <option name="columnDefault" value="&quot;ORACLE_BTL&quot;.&quot;ISEQ$$_78174&quot;.nextval" />
+                              <option name="columnName" value="ADMIN_ID" />
+                              <option name="columnType" value="NUMBER" />
+                              <option name="dataTypeStr" value="NUMBER" />
+                              <option name="ordinalPosition" value="1" />
+                              <option name="pk" value="true" />
+                              <option name="tableName" value="ADMINS" />
+                            </ColumnSourceDto>
+                            <ColumnSourceDto>
+                              <option name="columnName" value="FIRST_NAME" />
+                              <option name="columnType" value="VARCHAR2(255)" />
+                              <option name="dataTypeStr" value="VARCHAR2" />
+                              <option name="nullable" value="true" />
+                              <option name="ordinalPosition" value="2" />
+                              <option name="tableName" value="ADMINS" />
+                            </ColumnSourceDto>
+                            <ColumnSourceDto>
+                              <option name="columnName" value="LAST_NAME" />
+                              <option name="columnType" value="VARCHAR2(255)" />
+                              <option name="dataTypeStr" value="VARCHAR2" />
+                              <option name="nullable" value="true" />
+                              <option name="ordinalPosition" value="3" />
+                              <option name="tableName" value="ADMINS" />
+                            </ColumnSourceDto>
+                            <ColumnSourceDto>
+                              <option name="columnName" value="PASSWORD" />
+                              <option name="columnType" value="VARCHAR2(255)" />
+                              <option name="dataTypeStr" value="VARCHAR2" />
+                              <option name="nullable" value="true" />
+                              <option name="ordinalPosition" value="4" />
+                              <option name="tableName" value="ADMINS" />
+                            </ColumnSourceDto>
+                            <ColumnSourceDto>
+                              <option name="columnName" value="USERNAME" />
+                              <option name="columnType" value="VARCHAR2(255)" />
+                              <option name="dataTypeStr" value="VARCHAR2" />
+                              <option name="nullable" value="true" />
+                              <option name="ordinalPosition" value="5" />
+                              <option name="tableName" value="ADMINS" />
+                            </ColumnSourceDto>
+                          </list>
+                        </option>
+                        <option name="keys">
+                          <list>
+                            <ColumnIndexInfo>
+                              <option name="PK" value="true" />
+                              <option name="collation" value="A" />
+                              <option name="columnName" value="ADMIN_ID" />
+                              <option name="indexName" value="SYS_C008364" />
+                              <option name="nonUnique" value="true" />
+                              <option name="tableName" value="ADMINS" />
+                            </ColumnIndexInfo>
+                          </list>
+                        </option>
+                        <option name="schema" value="ORACLE_BTL" />
+                        <option name="tableName" value="ADMINS" />
+                        <option name="tableType" value="table" />
+                      </TableSourceDto>
+                      <TableSourceDto>
+                        <option name="columns">
+                          <list>
+                            <ColumnSourceDto>
+                              <option name="columnName" value="ADMIN_ID" />
+                              <option name="columnType" value="NUMBER" />
+                              <option name="dataTypeStr" value="NUMBER" />
+                              <option name="ordinalPosition" value="1" />
+                              <option name="tableName" value="ADMINS_ROLES" />
+                            </ColumnSourceDto>
+                            <ColumnSourceDto>
+                              <option name="columnName" value="ROLE_ID" />
+                              <option name="columnType" value="NUMBER" />
+                              <option name="dataTypeStr" value="NUMBER" />
+                              <option name="ordinalPosition" value="2" />
+                              <option name="tableName" value="ADMINS_ROLES" />
+                            </ColumnSourceDto>
+                          </list>
+                        </option>
+                        <option name="schema" value="ORACLE_BTL" />
+                        <option name="tableName" value="ADMINS_ROLES" />
+                        <option name="tableType" value="table" />
+                      </TableSourceDto>
+                      <TableSourceDto>
+                        <option name="columns">
+                          <list>
+                            <ColumnSourceDto>
+                              <option name="columnDefault" value="&quot;ORACLE_BTL&quot;.&quot;ISEQ$$_78178&quot;.nextval" />
+                              <option name="columnName" value="CATEGORY_ID" />
+                              <option name="columnType" value="NUMBER" />
+                              <option name="dataTypeStr" value="NUMBER" />
+                              <option name="ordinalPosition" value="1" />
+                              <option name="pk" value="true" />
+                              <option name="tableName" value="CATEGORIES" />
+                            </ColumnSourceDto>
+                            <ColumnSourceDto>
+                              <option name="columnName" value="IS_ACTIVATED" />
+                              <option name="columnType" value="NUMBER" />
+                              <option name="dataTypeStr" value="NUMBER" />
+                              <option name="ordinalPosition" value="2" />
+                              <option name="tableName" value="CATEGORIES" />
+                            </ColumnSourceDto>
+                            <ColumnSourceDto>
+                              <option name="columnName" value="IS_DELETED" />
+                              <option name="columnType" value="NUMBER" />
+                              <option name="dataTypeStr" value="NUMBER" />
+                              <option name="ordinalPosition" value="3" />
+                              <option name="tableName" value="CATEGORIES" />
+                            </ColumnSourceDto>
+                            <ColumnSourceDto>
+                              <option name="columnName" value="NAME" />
+                              <option name="columnType" value="VARCHAR2(255)" />
+                              <option name="dataTypeStr" value="VARCHAR2" />
+                              <option name="nullable" value="true" />
+                              <option name="ordinalPosition" value="4" />
+                              <option name="tableName" value="CATEGORIES" />
+                              <option name="unique" value="true" />
+                            </ColumnSourceDto>
+                          </list>
+                        </option>
+                        <option name="keys">
+                          <list>
+                            <ColumnIndexInfo>
+                              <option name="PK" value="true" />
+                              <option name="collation" value="A" />
+                              <option name="columnName" value="CATEGORY_ID" />
+                              <option name="indexName" value="SYS_C008370" />
+                              <option name="nonUnique" value="true" />
+                              <option name="tableName" value="CATEGORIES" />
+                            </ColumnIndexInfo>
+                            <ColumnIndexInfo>
+                              <option name="collation" value="A" />
+                              <option name="columnName" value="NAME" />
+                              <option name="indexName" value="UKT8O6PIVUR7NN124JEHX7CYGW5" />
+                              <option name="tableName" value="CATEGORIES" />
+                            </ColumnIndexInfo>
+                          </list>
+                        </option>
+                        <option name="schema" value="ORACLE_BTL" />
+                        <option name="tableName" value="CATEGORIES" />
+                        <option name="tableType" value="table" />
+                      </TableSourceDto>
+                      <TableSourceDto>
+                        <option name="columns">
+                          <list>
+                            <ColumnSourceDto>
+                              <option name="columnDefault" value="&quot;ORACLE_BTL&quot;.&quot;ISEQ$$_78190&quot;.nextval" />
+                              <option name="columnName" value="PRODUCT_ID" />
+                              <option name="columnType" value="NUMBER" />
+                              <option name="dataTypeStr" value="NUMBER" />
+                              <option name="ordinalPosition" value="1" />
+                              <option name="pk" value="true" />
+                              <option name="tableName" value="PRODUCTS" />
+                            </ColumnSourceDto>
+                            <ColumnSourceDto>
+                              <option name="columnName" value="COST_PRICE" />
+                              <option name="columnType" value="FLOAT" />
+                              <option name="dataTypeStr" value="FLOAT" />
+                              <option name="ordinalPosition" value="2" />
+                              <option name="tableName" value="PRODUCTS" />
+                            </ColumnSourceDto>
+                            <ColumnSourceDto>
+                              <option name="columnName" value="CURRENT_QUANTITY" />
+                              <option name="columnType" value="NUMBER" />
+                              <option name="dataTypeStr" value="NUMBER" />
+                              <option name="ordinalPosition" value="3" />
+                              <option name="tableName" value="PRODUCTS" />
+                            </ColumnSourceDto>
+                            <ColumnSourceDto>
+                              <option name="columnName" value="DESCRIPTION" />
+                              <option name="columnType" value="VARCHAR2(255)" />
+                              <option name="dataTypeStr" value="VARCHAR2" />
+                              <option name="nullable" value="true" />
+                              <option name="ordinalPosition" value="4" />
+                              <option name="tableName" value="PRODUCTS" />
+                            </ColumnSourceDto>
+                            <ColumnSourceDto>
+                              <option name="columnName" value="IMAGE" />
+                              <option name="columnType" value="BLOB" />
+                              <option name="dataTypeStr" value="BLOB" />
+                              <option name="nullable" value="true" />
+                              <option name="ordinalPosition" value="5" />
+                              <option name="tableName" value="PRODUCTS" />
+                            </ColumnSourceDto>
+                            <ColumnSourceDto>
+                              <option name="columnName" value="IS_ACTIVATED" />
+                              <option name="columnType" value="NUMBER" />
+                              <option name="dataTypeStr" value="NUMBER" />
+                              <option name="ordinalPosition" value="6" />
+                              <option name="tableName" value="PRODUCTS" />
+                            </ColumnSourceDto>
+                            <ColumnSourceDto>
+                              <option name="columnName" value="IS_DELETED" />
+                              <option name="columnType" value="NUMBER" />
+                              <option name="dataTypeStr" value="NUMBER" />
+                              <option name="ordinalPosition" value="7" />
+                              <option name="tableName" value="PRODUCTS" />
+                            </ColumnSourceDto>
+                            <ColumnSourceDto>
+                              <option name="columnName" value="NAME" />
+                              <option name="columnType" value="VARCHAR2(255)" />
+                              <option name="dataTypeStr" value="VARCHAR2" />
+                              <option name="nullable" value="true" />
+                              <option name="ordinalPosition" value="8" />
+                              <option name="tableName" value="PRODUCTS" />
+                            </ColumnSourceDto>
+                            <ColumnSourceDto>
+                              <option name="columnName" value="SALE_PRICE" />
+                              <option name="columnType" value="FLOAT" />
+                              <option name="dataTypeStr" value="FLOAT" />
+                              <option name="ordinalPosition" value="9" />
+                              <option name="tableName" value="PRODUCTS" />
+                            </ColumnSourceDto>
+                            <ColumnSourceDto>
+                              <option name="columnName" value="CATEGORY_ID" />
+                              <option name="columnType" value="NUMBER" />
+                              <option name="dataTypeStr" value="NUMBER" />
+                              <option name="nullable" value="true" />
+                              <option name="ordinalPosition" value="10" />
+                              <option name="tableName" value="PRODUCTS" />
+                            </ColumnSourceDto>
+                          </list>
+                        </option>
+                        <option name="keys">
+                          <list>
+                            <ColumnIndexInfo>
+                              <option name="PK" value="true" />
+                              <option name="collation" value="A" />
+                              <option name="columnName" value="PRODUCT_ID" />
+                              <option name="indexName" value="SYS_C008382" />
+                              <option name="nonUnique" value="true" />
+                              <option name="tableName" value="PRODUCTS" />
+                            </ColumnIndexInfo>
+                          </list>
+                        </option>
+                        <option name="schema" value="ORACLE_BTL" />
+                        <option name="tableName" value="PRODUCTS" />
+                        <option name="tableType" value="table" />
+                      </TableSourceDto>
+                      <TableSourceDto>
+                        <option name="columns">
+                          <list>
+                            <ColumnSourceDto>
+                              <option name="columnDefault" value="&quot;ORACLE_BTL&quot;.&quot;ISEQ$$_78181&quot;.nextval" />
+                              <option name="columnName" value="ROLE_ID" />
+                              <option name="columnType" value="NUMBER" />
+                              <option name="dataTypeStr" value="NUMBER" />
+                              <option name="ordinalPosition" value="1" />
+                              <option name="pk" value="true" />
+                              <option name="tableName" value="ROLES" />
+                            </ColumnSourceDto>
+                            <ColumnSourceDto>
+                              <option name="columnName" value="NAME" />
+                              <option name="columnType" value="VARCHAR2(255)" />
+                              <option name="dataTypeStr" value="VARCHAR2" />
+                              <option name="nullable" value="true" />
+                              <option name="ordinalPosition" value="2" />
+                              <option name="tableName" value="ROLES" />
+                            </ColumnSourceDto>
+                          </list>
+                        </option>
+                        <option name="keys">
+                          <list>
+                            <ColumnIndexInfo>
+                              <option name="PK" value="true" />
+                              <option name="collation" value="A" />
+                              <option name="columnName" value="ROLE_ID" />
+                              <option name="indexName" value="SYS_C008372" />
+                              <option name="nonUnique" value="true" />
+                              <option name="tableName" value="ROLES" />
+                            </ColumnIndexInfo>
+                          </list>
+                        </option>
+                        <option name="schema" value="ORACLE_BTL" />
+                        <option name="tableName" value="ROLES" />
+                        <option name="tableType" value="table" />
+                      </TableSourceDto>
+                    </list>
+                  </option>
+                </SchemaSourceDto>
+              </option>
+              <option name="sid" value="XE" />
+              <option name="url" value="jdbc:oracle:thin:@localhost:1521:XE" />
+              <option name="userName" value="oracle_btl" />
+              <option name="driverVersion">
+                <NameVersion>
+                  <option name="majorVersion" value="21" />
+                  <option name="minorVersion" value="1" />
+                  <option name="name" value="Oracle JDBC driver" />
+                  <option name="version" value="21.1.0.0.0" />
+                </NameVersion>
+              </option>
+            </DataConfigSourceDto>
+          </value>
+        </entry>
+      </map>
+    </option>
+  </component>
+</project>

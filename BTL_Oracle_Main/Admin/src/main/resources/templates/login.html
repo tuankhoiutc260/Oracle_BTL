@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="en" xmlns:th="http://www.w3.org/1999/xhtml, https://www.thymeleaf.org/">
+
+<head th:replace="fragments :: headerLogin"></head>
+
+<body>
+
+<div class="container" id="container">
+    <div class="form-container sign-up-container">
+        <div th:if = "${session.message}">
+            <p th:text = "${session.message}"></p>
+        </div>
+        <form th:action="@{/register-new}" th:object = "${adminDto}" method="post">
+            <h1>Create Account</h1>
+
+            <div class="social-container">
+                <a href="#" class="social"><i class="fab fa-facebook-f"></i></a>
+                <a href="#" class="social"><i class="fab fa-google-plus-g"></i></a>
+                <a href="#" class="social"><i class="fab fa-linkedin-in"></i></a>
+
+            </div>
+            <span>or use your email for registration</span>
+            <input type="text" name="firstName" placeholder="First name" required minlength="3" maxlength="10"/>
+<!--            <div class="alert alert-danger"-->
+<!--                 th:if = "${#name.hasErrors('firstName')}"-->
+<!--                 th:errors = "*{firstName}"></div>-->
+            <input type="text" name="lastName" placeholder="Last name" required minlength="5" maxlength="50"/>
+<!--            <div class="alert alert-danger"-->
+<!--                 th:if = "${#fields.hasErrors('lastName')}"-->
+<!--                 th:errors = "*{lastName}"></div>-->
+            <input type="email" name="username" placeholder="Email" required minlength="5" maxlength="50"/>
+<!--            <div class="alert alert-danger"-->
+<!--                 th:if = "${#fields.hasErrors('email')}"-->
+<!--                 th:errors = "*{email}"></div>-->
+            <input type="password" name="password" placeholder="Password" required minlength="5" maxlength="30"/>
+<!--            <div class="alert alert-danger"-->
+<!--                 th:if = "${#fields.hasErrors('password')}"-->
+<!--                 th:errors = "*{password}"></div>-->
+            <input type="password" name="repeatPassword" placeholder="Repeat Password" required minlength="5" maxlength="30"/>
+            <button>Sign Up</button>
+        </form>
+    </div>
+    <div class="form-container sign-in-container">
+        <form th:action="@{/do-login}" method="post">
+            <h1>Sign in</h1>
+            <div th:if="${param.error}" class="alert alert-danger text-center">
+                Invalid username & Password</div>
+
+            <div th:if="${param.logout}" class="alert alert-success text-center">
+                You have been logged out!</div>
+            <div class="social-container">
+                <a href="#" class="social"><i class="fab fa-facebook-f"></i></a>
+                <a href="#" class="social"><i class="fab fa-google-plus-g"></i></a>
+                <a href="#" class="social"><i class="fab fa-linkedin-in"></i></a>
+            </div>
+
+            <span>or use your account</span>
+            <input type="email" name="username" id="username" placeholder="Email" required minlength="5" maxlength="50"/>
+            <input type="password" name="password" id="password" placeholder="Mật khẩu" required minlength="5" maxlength="30"/>
+            <a th:href="@{/forgot-password}" href="forgot-password.html">Forgot your password?</a>
+            <button>Sign In</button>
+        </form>
+    </div>
+    <div class="overlay-container">
+        <div class="overlay">
+            <div class="overlay-panel overlay-left">
+                <h2>Already have an account</h2>
+                <button class="ghost" id="signIn">Sign In</button>
+            </div>
+            <div class="overlay-panel overlay-right">
+                <h2>No account</h2>
+                <button class="ghost" id="signUp">Sign Up</button>
+            </div>
+        </div>
+    </div>
+</div>
+
+
+<script th:replace="fragments :: scriptLogin"></script>
+</body>
+
+</html>
